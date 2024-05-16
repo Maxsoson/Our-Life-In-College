@@ -1,0 +1,840 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Itim', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+button {
+    cursor: pointer;
+}
+/* HEADER */ /* ГОТОВИЙ */
+
+.header{
+    width: 100%; 
+    height: 105px;
+    background-color: #202A86;  
+}
+
+.header--inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-header {
+    font-style: italic;
+    font-size: 20px;
+    width: 112px;
+    height: 81px;
+    border-radius: 15px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.header--csbc-img{
+    width: 88px;
+    height: 81px;
+    margin-bottom: 12px;
+    margin-top: 12px;   
+}
+
+.header--logo {
+    width: 400px;
+    height: 81px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+/* Links */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-link {
+    background: linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+    border-radius: 25px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+
+.modal-link-button {
+    width: 35px;
+    height: 35px;
+    background-image: url("/images/hr1.png");
+    background-size: cover; /* Або можна вказати розміри зображення */
+    background-repeat: no-repeat; /* Щоб зображення не повторювалося */
+    border-radius: 25px;
+    float: right;
+}
+
+.modal-links {
+    width: 350px;
+    height: 250px;
+    /*background-color: #ffffff;*/
+}
+
+.kak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-links-mazurok ,
+.modal-links-usanin ,
+.modal-links-martynenko {
+    display: flex;
+    margin: 15px;
+}
+
+.instagram , .facebook , .github {
+    margin: 2px;
+}
+
+.github-photo ,
+.instagram-photo ,
+.facebook-photo{
+    border-radius: 25px;
+}
+
+.modal-links-mazurok-name {
+    margin: 2px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.modal-links-usanin-name {
+    margin: 2px;
+    height: 50px;
+    font-size: 17px;
+}
+
+.modal-links-martynenko-name {
+    margin: 2px;
+    height: 50px;
+    font-size: 17px;
+}
+
+/* /Links */
+
+/* About Us */
+
+.modal {
+
+    z-index: 1; /* Sit on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+
+    margin: 5% auto; /* Centered with some margin */
+
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 1200px; /* Limit the maximum width */
+    position: relative; /* Needed for positioning the close button */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+    cursor: pointer;
+    background-image: url("/images/hr1.png");
+    background-size: cover; /* Або можна вказати розміри зображення */
+    background-repeat: no-repeat; /* Щоб зображення не повторювалося */
+    border-radius: 25px;
+}
+
+.about--about {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif; 
+
+}
+
+.about--body h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.about--body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height of the viewport */
+}
+
+.about--container {
+    width: 1000px; /* Or your desired width */
+    height: 500px; /* Or your desired height */
+    background: linear-gradient(90deg, hsla(297, 59%, 34%, 1) 0%, hsla(345, 74%, 58%, 1) 50%, hsla(22, 87%, 56%, 1) 100%);
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Needed for positioning the close button */
+}
+
+.card {
+    cursor: pointer;
+    width: 320px;
+    height: 450px;
+    perspective: 1000px;
+}
+
+.front,
+.back {
+    margin: 15px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    border-radius: 25px;
+}
+
+.front img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: #f1f1f1;
+}
+
+.back-content {
+    width: 100%;
+    text-align: center;
+    color: #333333;
+}
+
+.small-text {
+    display: block;
+    font-size: 16px;
+    color: black;
+}
+
+.card:hover .front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(0);
+}
+
+
+/* /About Us */
+
+/* /HEADER */
+
+
+/*MAIN*/ /* ГОТОВИЙ home*/
+
+.main{
+    background-image: url("/images/paper.jpg");
+    /*background: linear-gradient(90deg, hsla(230, 95%, 51%, 1) 0%, hsla(58, 90%, 64%, 1) 100%);*/
+    background-size: cover;
+    padding: 20px 0;
+
+}
+
+.main-title {
+    text-align: center; /* центрує текст горизонтально */
+    justify-content: center; /* центрує вміст по горизонталі */
+    align-items: center; /* центрує вміст по вертикалі */
+    font-size: 25px;
+}
+.home-home {
+    cursor: pointer;
+}
+.main-title-oneK {
+    color: #FF88EC;
+}
+
+.main-title-twoK {
+    color: #6386FF;
+}
+
+/* NAVIGATION */ /* ГОТОВИЙ */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+.navigation ul {
+    list-style: none;
+    flex-direction: row;
+    display: flex; 
+}
+.navigation-button{
+    font-style: italic;
+    font-size: 20px;
+    width: 140px;
+    height: 55px;
+    border-radius: 20px;
+    margin-top: 19px;
+    margin-bottom: 19px;
+    text-decoration: none; /* Відсутність підкреслення для посилань */
+    display: inline-block; /* Кнопка має блочний елемент */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+}
+.navigation-button:hover {
+    border: 3px solid #000;
+    background: linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
+    font-size: 30px;
+}
+.navigation-button__one{
+    margin-left: 62.5px;
+    margin-right: 62.5px;
+}
+.navigation-button__two{
+    margin-left: 62.5px;
+    margin-right: 62.5px;
+}
+.navigation-button__three{
+    margin-left: 62.5px;
+    margin-right: 62.5px;
+}
+.navigation-button__three:hover {
+    font-size: 25px;
+}
+.navigation-button__four{
+    margin-left: 62.5px;
+    margin-right: 62.5px;
+}
+
+.button{
+    border: 3px solid #860a9c; /* Товщина, тип та колір контуру */
+    border-radius: 5px; /* Радіус закруглення кутиків контуру */
+    color: #e0b517; /* Колір тексту */
+    text-decoration: none; /* Відсутність підкреслення для посилань */
+    display: inline-block; /* Кнопка має блочний елемент */
+}
+    
+.button:hover {
+    /* Стилі для стану наведення курсору */
+    background-color: hsl(280, 85%, 38%); /* Зміна кольору фону */
+    color: #ed0101; /* Зміна кольору тексту */
+}
+
+.active {
+    background: linear-gradient(90deg, hsla(189, 92%, 69%, 1) 0%, hsla(335, 89%, 66%, 1) 50%, hsla(240, 63%, 57%, 1) 100%);
+}
+
+/* /NAVIGATION */
+
+/* MAIN SECTION */ /* ГОТОВО */
+
+.main-foto {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.main-foto-oneK{
+    border: 3px solid #FF88EC; /* Товщина, тип та колір контуру */
+    width: 340px;
+    height: 350px;
+    margin-right: 65px;
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.main-foto-twoK {
+    border: 3px solid #6386FF; /* Товщина, тип та колір контуру */
+    width: 400px;
+    height: 350px;
+    margin-left: 65px;
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+/* /MAIN SECTION */
+
+/* MAIN  home*/
+
+.home-title {
+    text-align: center; /* центрує текст горизонтально */
+    justify-content: center; /* центрує вміст по горизонталі */
+    align-items: center; /* центрує вміст по вертикалі */
+    font-size: 25px;
+}
+
+.collections {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding:10px 0 ;
+}
+
+.collection-item-outer {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 635px;
+    box-sizing: border-box;
+    background: #ff11;
+    margin-right: 30px; 
+    border: 3px solid lightblue;   
+}
+
+.collection-item {
+    width: 100%;
+}
+
+.collection-text {
+    padding: 0 15px 15px 20px;
+    align-items: center;
+}
+
+.collection-text h3 {
+    color: #000;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    text-align: center; /* Вирівнювання тексту по центру */
+    
+}
+
+.collection-text p {
+    max-height: 180px;
+    overflow: hidden;
+    padding: 3px;
+    text-align: center; /* Вирівнювання тексту по центру */
+    font-size: 15px;
+}
+.video {
+    width:350px; 
+    margin-left: 30px;   
+}
+.video video {
+    width: 100%;  
+    height: 250px;
+}
+
+.photo {
+    width: 350px;
+    margin-left: 30px;
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.photo img {
+    width: 100%;  
+    height: 300px;
+}
+
+.collections:last-child {
+    margin-bottom: 0;
+}
+/* /MAIN  home*/
+
+/*MAIN*/ /*  news*/
+
+.collections-news{
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    padding:10px 0 ;
+}
+.collections-news a{
+    text-decoration: none;
+    color: #000;
+}
+
+.collection-item-outer-news{
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 800px;
+    background: #ff22;
+    margin-right: 30px; 
+    border: 3px solid lightblue;
+}
+.collection-item-news{
+    width: 100%;
+}
+.collection-text-news{
+    padding: 0 15px 15px 20px;
+    align-items: center;
+}
+/*MAIN*/ /*  news*/
+
+/* MAIN sport */
+
+.main-wrapper {
+    margin: 0 auto;
+}
+
+.main-wrapper-title {
+    text-align: center; /* центрує текст горизонтально */
+    justify-content: center; /* центрує вміст по горизонталі */
+    align-items: center; /* центрує вміст по вертикалі */
+    font-size: 35px;
+}
+
+.services_block-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.services_item {
+    padding: 30px;
+    flex: 0 0 32%;
+    text-align: center;
+    transition-duration: 0.3s;
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    transition: .7s;
+    margin: 10px 0;
+}
+
+.services_item:hover {
+    box-shadow: 0 5px 25px 0 rgba(5, 5, 5, 0.2);
+    transform: translateY(-15px);
+}
+
+.services_item-one {
+    background-image: url("/images/logo-sport1.jpg");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.services_item-two {
+    background-image: url("/images/logo-sport2.jpg");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+.services_item-three {
+    background-image: url("/images/logo-sport3.jpg");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.box-icon{
+    border: 1px solid #161C35;
+    border-radius: 50%;
+    height: 108px;
+    line-height: 108px;
+    text-align: center;
+    width: 108px;
+    margin: 0 auto;
+    transition-duration: 0.3s;
+}
+
+.box-icon-one {
+    background-image: url("/images/sport1.JPG");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.box-icon-two {
+    background-image: url("/images/sport2.jpg");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.box-icon-three {
+    background-image: url("/images/sport3.jpg");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+.box-icon > i {
+    font-size: 54px;
+    color: #161C35;
+    line-height: 108px;
+    transition-duration: 0.3s;
+}
+
+.box-icon:hover {
+    background-image: url("/images/logo.jpg");
+    background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
+    background-position: center; /* Позиционируем изображение по центру */
+}
+
+.services_item:hover .box-icon > i {
+    color: #FFFFFF;
+}
+
+.services_item > h3 {
+    margin: 23px 0;
+    color:#161C35;
+    text-align: center;
+}
+
+.services_item > p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans' sans-serif;
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.services_item-one > p {
+    color: #FFFFFF;
+}
+
+.services_item > a {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    color:#161C35;
+    font-size: 18px;
+    border-radius: 0, 5px, 0, 5px;
+    border: 2px solid #161C35;
+    text-decoration: none;
+    transition-duration: 0.3s;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.services_item > a:hover {
+    background: #161C35;
+    color: #FFFFFF;
+}
+
+.services, .works, .team, .blog, .contact, .footer {
+    padding: 60px, 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* /MAIN sport */
+
+/* MAIN Our group*/
+
+.groups-container {
+    width: 100%; /* Or your desired width */
+    /*background-image: url("/Our group/images/paper.jpg");*/
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the flex container */
+    flex-wrap: wrap; /* Allow flex items to wrap */
+}
+
+.card-groups {
+    cursor: pointer;
+    width: 320px;
+    height: 450px;
+    perspective: 1000px;
+    margin: 10px; /* Add some margin between cards */
+}
+
+.card-groups:nth-child(-n+3) {
+    align-self: center; /* Align the first three cards to the center vertically */
+}
+
+.card-groups:nth-child(n+4) {
+    align-self: flex-start; /* Align the rest of the cards to the start vertically */
+}
+
+.front-groups,
+.back-groups {
+    margin: 15px;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    transition: transform 0.6s;
+    backface-visibility: hidden;
+    border-radius: 25px;
+}
+
+.front-groups img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.back-groups {
+    transform: rotateY(180deg);
+    background-color: #f1f1f1;
+}
+
+.back-content-groups {
+    width: 100%;
+    text-align: center;
+    color: #333333;
+}
+
+
+.card-groups:hover .front-groups {
+    transform: rotateY(-180deg);
+}
+
+.card-groups:hover .back-groups {
+    transform: rotateY(0);
+}
+
+.small-text {
+    font-size: 16px;
+    color: black;
+    display: block;
+}
+
+.card-groups h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* /MAIN Our group*/
+
+/* MAIN Memes*/
+
+.body-meme {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    place-content: center;
+    
+}
+
+.title-meme {
+    text-align: center;
+    color: #000;
+
+    font-size: calc(20px + (80 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+.title-meme h1 {
+    margin: 3px;
+}
+.gallery-mame {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery-mame a {
+    width: 20%; /* Збільште або зменште значення відповідно до потреб дизайну */
+    height: auto; /* Автоматична висота, щоб зберігати пропорції */
+    margin: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0.3rem .5rem black;
+}
+
+.gallery-mame a img {
+    width: 100%;
+    height: auto; /* Автоматична висота, щоб зберігати пропорції */
+    object-fit: cover;
+}
+
+.gallery-mame a img:hover {
+    transform: scale(1.05);
+}
+
+/* /MAIN Memes*/
+
+/* FOOTER */
+
+.footer {
+    background-color: #202A86;
+    color: #B9B0B0;
+    padding: 20px 0;
+}
+
+.footer--container {
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer--mumu {
+    width: 35%;
+    margin: 10px 30px;
+}
+
+.footer--contacts{
+     padding-left: 20px;
+}
+
+.footer--contacts ul {
+    list-style-type: none;
+}
+
+.footer--contacts--li{
+    margin-bottom: 10px;
+}
+
+.address {
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    color: #B9B0B0;
+}
+
+.address a {
+    text-decoration: none;
+}
+
+.address:hover{
+    color: #ed0101;
+  }
+
+.maps {
+    width: 500px;
+    height: 200px;
+    margin: 10px 30px;
+}
+
+/* /FOOTER */
