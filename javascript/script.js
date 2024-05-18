@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded' , function() {
+
+    /* Сареср повернення */
     
-    /*Rebooting*/
     window.onload = function() {
         // Перевірка типу навігації
         if (performance.navigation.type === 1) {
@@ -8,6 +9,9 @@ document.addEventListener('DOMContentLoaded' , function() {
             window.location.href = 'index.html';
         }
     };
+    
+
+    
     
     /* Լinks */
     let btn1 = document.querySelector('#one');
@@ -35,7 +39,6 @@ document.addEventListener('DOMContentLoaded' , function() {
     modal_2.classList.remove('open')
    })
 
-   /* NAVIGATION */
    const path = window.location.href;
    const menu = [ ...document.querySelectorAll("ul li a") ];
    const link = menu.find(function (elm) {
