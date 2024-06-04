@@ -88,7 +88,7 @@ button {
 .modal-link-button {
     width: 35px;
     height: 35px;
-    background-image: url("/images/hr1.png");
+    background-image: url("./images/hr1.png");
     background-size: cover; /* Або можна вказати розміри зображення */
     background-repeat: no-repeat; /* Щоб зображення не повторювалося */
     border-radius: 25px;
@@ -178,7 +178,7 @@ button {
     width: 30px; /* Adjust the size as needed */
     height: 30px;
     cursor: pointer;
-    background-image: url("/images/hr1.png");
+    background-image: url("./images/hr1.png");
     background-size: cover; /* Або можна вказати розміри зображення */
     background-repeat: no-repeat; /* Щоб зображення не повторювалося */
     border-radius: 25px;
@@ -274,7 +274,7 @@ button {
 /*MAIN*/ /* ГОТОВИЙ home*/
 
 .main{
-    background-image: url("/images/paper.jpg");
+    background-image: url("./images/paper.jpg");
     /*background: linear-gradient(90deg, hsla(230, 95%, 51%, 1) 0%, hsla(58, 90%, 64%, 1) 100%);*/
     background-size: cover;
     padding: 20px 0;
@@ -546,18 +546,18 @@ button {
 }
 
 .services_item-one {
-    background-image: url("/images/logo-sport1.jpg");
+    background-image: url("./images/logo-sport1.jpg");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
 
 .services_item-two {
-    background-image: url("/images/logo-sport2.jpg");
+    background-image: url("./images/logo-sport2.jpg");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
 .services_item-three {
-    background-image: url("/images/logo-sport3.jpg");
+    background-image: url("./images/logo-sport3.jpg");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
@@ -574,19 +574,19 @@ button {
 }
 
 .box-icon-one {
-    background-image: url("/images/sport1.JPG");
+    background-image: url("./images/sport1.JPG");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
 
 .box-icon-two {
-    background-image: url("/images/sport2.jpg");
+    background-image: url("./images/sport2.jpg");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
 
 .box-icon-three {
-    background-image: url("/images/sport3.jpg");
+    background-image: url("./images/sport3.jpg");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
@@ -598,7 +598,7 @@ button {
 }
 
 .box-icon:hover {
-    background-image: url("/images/logo.jpg");
+    background-image: url("./images/logo.jpg");
     background-size: cover; /* Масштабируем изображение, чтобы оно заполнило весь контейнер */
     background-position: center; /* Позиционируем изображение по центру */
 }
